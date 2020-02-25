@@ -44,3 +44,28 @@ class QueueTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+
+Given a sorted array of distinct non-negative integers, find the smallest missing element in it.
+## Examples
+_Input:_ `A = [0, 1, 2, 6, 9, 11, 15]`
+_Output:_ The smallest missing element is 3
+_Input:_ `A = [1, 2, 3, 4, 6, 9, 11, 15]`
+_Output:_ The smallest missing element is 0
+_Input:_ `A = [0, 1, 2, 3, 4, 5, 6]`
+_Output:_ The sma
+
+check the length of the array
+run a For loop with the length of the array as the range()
+check if the index of each element is equal to the element itself
+if it's not, return the the element
+if it tretuns true 
+add increment the length of the array and return the missing number
+
+def smallest_number(value):
+    for i in range(len(value)):
+        if i == value[i]:
+            return len(value) + 1
+        else:
+            return i
